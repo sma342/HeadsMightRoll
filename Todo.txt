@@ -1,0 +1,61 @@
+Patch to add  HMR_PrisonerExecution
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Data\Core\Defs\Misc\RecordDefs\Records_Time.xml
+
+  <RecordDef>
+    <defName>TimeWardening</defName>
+    <label>time wardening</label>
+    <description>Total time spent wardening.</description>
+    <type>Time</type>
+    <measuredTimeJobs>
+      <li>PrisonerAttemptRecruit</li>
+      <li>PrisonerExecution</li>
+      <li>TakeWoundedPrisonerToBed</li>
+      <li>EscortPrisonerToBed</li>
+      <li>ReleasePrisoner</li>
+    </measuredTimeJobs>
+  </RecordDef>
+----------------------------------
+Create specific jobdrivers to:
+
+prepareVictim aka take victim to bed
+releaseVictim
+executeVictim
+
+----------------------------------
+Create party upon execution
+
+----------------------------------
+Create thoughts + motes for:
+victim
+executionner
+people watching
+
+----------------------------------
+Give chances for victim to release itself
+
+----------------------------------
+Give chances to executionner to fail execution
+
+----------------------------------
+get good offsets to display
+
+0 building 
+1 body
+2 building
+3 head
+
+or move body pos to match perfectly the guillotine
+----------------------------------
+get sounds for :
+wooden shackle
+blade
+head falling
+people around yelling/shouting/whatevering
+----------------------------------
+Animation to drop wooden shackle
+Animation to drop blade
+Animation to make head bounce and roll
+----------------------------------
+Retrieve head mesh
+----------------------------------
+blood puddle upton death

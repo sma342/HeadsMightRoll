@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>HMR_PrepareVictim</defName>
+		<driverClass>HMR_JobDriver_TakeToGuillotine</driverClass>
+		<reportString>taking TargetA to TargetB.</reportString>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<makeTargetPrisoner>true</makeTargetPrisoner>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+	<!--
+  <JobDef>
+    <defName>Arrest</defName>
+    <driverClass>JobDriver_TakeToBed</driverClass>
+    <reportString>arresting TargetA.</reportString>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <makeTargetPrisoner>true</makeTargetPrisoner>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  -->
+	<JobDef>
+		<defName>HMR_ReleaseGuillotineVictim</defName>
+		<driverClass>HMR_JobDriver_ReleaseGuillotineVictim</driverClass>
+		<reportString>releasing TargetA.</reportString>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	<!--
+<JobDef>
+    <defName>ReleasePrisoner</defName>
+    <driverClass>JobDriver_ReleasePrisoner</driverClass>
+    <reportString>releasing TargetA.</reportString>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  -->
+	<JobDef>
+		<defName>HMR_PrisonerExecution</defName>
+		<driverClass>HMR_JobDriver_Execute</driverClass>
+		<reportString>executing TargetA.</reportString>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	<!--
+  <JobDef>
+    <defName>PrisonerExecution</defName>
+    <driverClass>JobDriver_Execute</driverClass>
+    <reportString>executing TargetA.</reportString>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  -->
+</Defs>
